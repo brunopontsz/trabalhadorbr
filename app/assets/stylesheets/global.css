@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  --e-global-color-primary: #6EC1E4;
+  --e-global-color-secondary: #54595F;
+  --e-global-color-text: #7A7A7A;
+  --e-global-color-accent: #61CE70;
+  --e-global-color-82ecea5: #C89E6A;
+  --e-global-color-23f94fa: #000000;
+  --e-global-color-3594342: #FFFFFF;
+  --e-global-color-81f7da3: #FF8A06;
+  --e-global-color-825e594: #0B1130;
+  --e-global-color-3d23f0c: #FFEF13;
+  --e-global-color-d4404dc: #25B413;
+  --e-global-typography-primary-font-family: "Roboto";
+  --e-global-typography-primary-font-weight: 600;
+  --e-global-typography-secondary-font-family: "Roboto Slab";
+  --e-global-typography-secondary-font-weight: 400;
+  --e-global-typography-text-font-family: "Roboto";
+  --e-global-typography-text-font-weight: 400;
+  --e-global-typography-accent-font-family: "Roboto";
+  --e-global-typography-accent-font-weight: 500;
+  --e-global-typography-001a75d-font-family: "Sawarabi Mincho";
+  --e-global-typography-001a75d-font-weight: 800;
+  --e-global-typography-8d8ddc5-font-family: "Times New Roman";
+  --e-global-typography-8d8ddc5-font-size: 40px;
+  --e-global-typography-8d8ddc5-font-weight: 900;
+  --e-global-typography-b2215a4-font-family: "Times New Roman";
+  --e-global-typography-b2215a4-font-size: 16px;
+  --e-global-typography-b2215a4-font-weight: 400;
+}
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

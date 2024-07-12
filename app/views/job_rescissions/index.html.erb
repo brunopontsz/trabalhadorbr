@@ -1,0 +1,470 @@
+<section class="section-form">
+  <h2>Preencha e receba o calculo da sua rescisão trabalhista no seu WhatsApp</h2>
+  <form name="sign-up-form" id="form-rescission" class="form" action="" method="post" autocomplete="off">
+    <div class="form-group">
+      <div class="form-element" id="date-admission-input">
+        <div>
+          <label for="dateadmission">Data de admissão</label>
+          <div class="form-info-alert">
+            <i class="fa fa-exclamation"></i>
+            <span>Data de admissão obrigatória.</span>
+          </div>
+        </div>
+        <input
+          type="text"
+          name="dateadmission"
+          id="dateadmission"
+          placeholder="dd/mm/aaaa"
+          />
+      </div>
+      <div>
+        <label for="datedemission">Data de demissão</label>
+        <input
+          name="datedemission"
+          id="datedemission"
+          type="text"
+          placeholder="dd/mm/aaaa"
+          />
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-element" id="type-demission-select">
+        <div>
+          <label for="typedemission" class="required">Tipo de demissão</label>
+          <div class="form-info-alert">
+            <i class="fa fa-exclamation"></i>
+            <span>Tipo da Demissão obrigatório.</span>
+          </div>
+        </div>
+        <select class="placeholder" name="typedemission" id="typedemission">
+          <option value="" disabled selected hidden>Selecionar</option>
+          <option value="Pediu demissão">Pediu demissão</option>
+          <option value="Demitido sem justa causa">Demitido sem justa causa</option>
+          <option value="Demitido por justa causa">Demitido por justa causa</option>
+          <option value="Ainda não houve demissão">Ainda não houve demissão</option>
+        </select>
+      </div>
+      <div class="form-element" id="salary-input">
+        <div>
+          <label for="salary">Salário</label>
+          <div class="form-info-alert">
+            <i class="fa fa-exclamation"></i>
+            <span>Salário obrigatório.</span>
+          </div>
+        </div>
+        <input type="text" name="salary" id="salary" placeholder="R$ 0,00" oninput="validateNumberInput(event)"/>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-element" id="advance-notice-select">
+        <div>
+          <label for="advancenotice">O aviso prévio foi trabalhado?</label>
+          <div class="form-info-alert">
+            <i class="fa fa-exclamation"></i>
+            <span>Aviso prévio obrigatório.</span>
+          </div>
+        </div>
+        <select class="placeholder" name="advancenotice" id="advancenotice">
+          <option value="" disabled selected hidden>Selecionar</option>
+          <option value="Trabalhado">Trabalhado</option>
+          <option value="Indenizado">Indenizado</option>
+        </select>
+      </div>
+      <div class="form-element" id="vacation-select">
+        <div>
+          <label for="vacation">Existem férias vencidas?</label>
+          <div class="form-info-alert">
+            <i class="fa fa-exclamation"></i>
+            <span>Esse campo é obrigatório.</span>
+          </div>
+        </div>
+        <select class="placeholder" name="vacation" id="vacation">
+          <option value="" disabled selected hidden>Selecionar</option>
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
+      </div>
+      <div class="form-element" id="thirteen-salary-select">
+        <div>
+          <label for="thirteensalary">Existe pendência de décimo terceiro?</label>
+          <div class="form-info-alert">
+            <i class="fa fa-exclamation"></i>
+            <span class="correctly">Décimo terceiro salário obrigatório.</span>
+          </div>
+        </div>
+        <select class="placeholder" name="thirteensalary" id="thirteensalary">
+          <option value="" disabled selected hidden>Selecionar</option>
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-element" id="late-payment-termination-select">
+        <div>
+          <label for="latepaymenttermination">O pagamento da sua rescisão está atrasado há mais de 10 dias?</label>
+          <div class="form-info-alert">
+            <i class="fa fa-exclamation"></i>
+            <span class="correctly-600">Campo é obrigatório.</span>
+          </div>
+        </div>
+        <select class="placeholder" name="latepaymenttermination" id="latepaymenttermination">
+          <option value="" disabled selected hidden>Selecionar</option>
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-element" id="name-input">
+        <div>
+          <label for="name">Nome completo</label>
+          <div class="form-info-alert">
+            <i class="fa fa-exclamation"></i>
+            <span>Nome é obrigatório.</span>
+          </div>
+        </div>
+        <input type="text" name="name" id="name" placeholder="Nome completo" />
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-element" id="email-input">
+        <div>
+          <label for="email">E-mail</label>
+          <div class="form-info-alert">
+            <i class="fa fa-exclamation"></i>
+            <span>E-mail é obrigatório.</span>
+          </div>
+        </div>
+        <input type="text" name="email" id="email" placeholder="E-mail"/>
+      </div>
+      <div>
+        <label for="phone">Telefone</label>
+        <input type="text" name="phone" id="phone" placeholder="Telefone" oninput="validateNumberInput(event)"/>
+      </div>
+    </div>
+    <div class="form-group">
+      <div>
+        <label for="datebirth">Data de nascimento</label>
+        <input type="text" name="datebirth" id="datebirth" placeholder="dd/mm/aaaa" />
+      </div>
+      <div>
+        <label for="office">Função</label>
+        <input type="text" name="office" id="office" placeholder="Função(cargo)" />
+      </div>
+      <div class="form-element" id="company-input">
+        <div>
+          <label for="company">Empresa</label>
+          <div class="form-info-alert">
+            <i class="fa fa-exclamation"></i>
+            <span>Empresa é obrigatório.</span>
+          </div>
+        </div>
+        <input type="text" name="company" id="company" placeholder="Nome da empresa" />
+      </div>
+    </div>
+    <div class="form-group">
+      <div>
+        <p>Carteira de trabalho está assinada?</p>
+        <div class="form-radio">
+          <span>
+          <input type="radio" value="Sim" name="signedcard" id="signed-yes">
+          <label for="signed-yes">Sim</label>
+          </span>
+          <span>
+          <input type="radio" value="Não" name="signedcard" id="signed-not">
+          <label for="signed-not">Não</label>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div>
+        <p>FGTS está depositado corretamente?</p>
+        <div class="form-radio">
+          <span>
+          <input type="radio" value="Sim" name="correctlyfgts" id="fgts-yes">
+          <label for="fgts-yes">Sim</label>
+          </span>
+          <span>
+          <input type="radio" value="Não" name="correctlyfgts" id="fgts-not">
+          <label for="fgts-not">Não</label>
+          </span>
+          <span>
+          <input type="radio" value="Apenas uma parte" name="correctlyfgts" id="fgts-part">
+          <label for="fgts-part">Apenas uma parte</label>
+          </span>
+        </div>
+      </div>
+    </div>
+    <button id="button-form">
+    <span>Calcular rescisão</span>
+    </button>
+  </form>
+  <dialog class="modal-rescission" id="modal-rescission">
+    <div id="modal-container" class="modal-container">
+      <button type="button" id="button-close-modal" class="close">
+        <span aria-hidden="true">x</span>
+      </button>
+      <h3>Resumo Recisão</h3>
+      <div>
+      <p class="call_to_action_whatsapp">Receber mais detalhes?</p>
+      <button type="button" class="whatsapp-button" id="whatsapp-button"><i class="fa fa-whatsapp" aria-hidden="true"></i> Receba seu calculo de rescisão no Whatsapp</button>
+    </div>
+  </dialog>
+</section>
+
+<% content_for :before_javascript do %>
+  <script>
+    const email_regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    let obj = {}
+
+    function showError(errorElement) {
+      document.getElementById(errorElement).classList.add('error');
+    }
+
+    function clearError() {
+      let errors = document.querySelectorAll(".error");
+      for(let error of errors) {
+        error.classList.remove('error');
+      }
+    }
+
+    function onScrollForIdElement(idElement){
+      document.getElementById(idElement).scrollIntoView({ behavior: "smooth" });
+    }
+
+    const form = document.getElementById("form-rescission")
+
+    form.onsubmit = function(event) {
+      event.preventDefault();
+      clearError();
+      let itsScroll = false;
+    
+      if(form.dateadmission.value === "") {
+        const dateAdmissionIdElement = "date-admission-input";
+        showError(dateAdmissionIdElement);
+        if(itsScroll === false) {
+          onScrollForIdElement(dateAdmissionIdElement);
+          itsScroll = true;
+        }
+      }
+      if(form.typedemission.value === "") {
+        const typeDemissionIdElement = "type-demission-select"
+        showError(typeDemissionIdElement);
+        if(itsScroll === false) {
+          onScrollForIdElement(typeDemissionIdElement);
+          itsScroll = true;
+        }
+      }
+      if(form.salary.value === '') {
+        const salaryIdElement = "salary-input"
+        showError(salaryIdElement);
+        if(itsScroll === false) {
+          onScrollForIdElement(salaryIdElement);
+          itsScroll = true;
+        }
+      }
+      if(form.advancenotice.value === '') {
+        const advanceNoticeIdElement = "advance-notice-select";
+        showError(advanceNoticeIdElement);
+        if(itsScroll === false) {
+          onScrollForIdElement(advanceNoticeIdElement);
+          itsScroll = true;
+        }
+      }
+      if(form.vacation.value === '') {
+        const vacationIdElement = "vacation-select";
+        showError(vacationIdElement)
+        if(itsScroll === false) {
+          onScrollForIdElement(vacationIdElement);
+          itsScroll = true;
+        }
+      }
+      if(form.thirteensalary.value === '') {
+        const thirteenSalaryIdElement = "thirteen-salary-select";
+        showError(thirteenSalaryIdElement);
+        if(itsScroll === false) {
+          onScrollForIdElement(thirteenSalaryIdElement);
+          itsScroll = true;
+        }
+      }
+      if(form.latepaymenttermination.value === '') {
+        const latePaymentTerminationIdSelect = "late-payment-termination-select"
+        showError(latePaymentTerminationIdSelect);
+        if(itsScroll === false) {
+          onScrollForIdElement(latePaymentTerminationIdSelect);
+          itsScroll = true;
+        }
+      }
+      if(form.name.value === "") {
+        const nameIdElement = "name-input";
+        showError(nameIdElement);
+        if(itsScroll === false) {
+          onScrollForIdElement(nameIdElement);
+          itsScroll = true;
+        }
+      }
+      if(form.email.value === "") {
+        const emailIdElement = "email-input"
+        showError(emailIdElement);
+        if(itsScroll === false) {
+          onScrollForIdElement(emailIdElement);
+          itsScroll = true;
+        }
+      }
+      // if(email_regex.test(form.email.value)) {
+      //   const emailIdElement = "email-input"
+      //   showError(emailIdElement);
+      //   if(itsScroll === false) {
+      //     onScrollForIdElement(emailIdElement);
+      //     itsScroll = true;
+      //   }
+      // }
+      if(form.company.value === "") {
+        const companyIdElement = "company-input";
+        showError(companyIdElement);
+        if(itsScroll === false) {
+          onScrollForIdElement(companyIdElement);
+          itsScroll = true;
+        }
+      }
+    
+      obj = {
+        admission_date: form.dateadmission.value,
+        demission_date: form.datedemission.value,
+        demission_type: form.typedemission.value,
+        salary: form.salary.value,
+        notice_worked: form.advancenotice.value,
+        expired_vacation: form.vacation.value,
+        thirteenth_pending: form.thirteensalary.value,
+        expired_rescission: form.latepaymenttermination.value,
+        name: form.name.value,
+        email: form.email.value,
+        phone_number: form.phone.value,
+        dateBirth: form.datebirth.value,
+        role: form.office.value,
+        company: form.company.value,
+        assigned_ctps: form.signedcard.value,
+        fgts_deposited_correctly: form.correctlyfgts.value,
+      }
+
+      if (itsScroll == false) {
+        calcTermination()
+      }
+    } 
+    
+    function removeClassErrorInElement(idClassInput) {
+      let idElement = document.getElementById(idClassInput);
+      idElement.classList.remove('error');
+    }
+    function removeClassErrorAndPlaceholderInElement(elementSelect, idClassInput) {
+      let idElement = document.getElementById(idClassInput);
+      idElement.classList.remove('error');
+      elementSelect.classList.remove('placeholder');
+    }
+
+    async function calcTermination() {
+      const response = await fetch('/leads', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(obj)
+      });
+
+      if (response.ok) {
+        const htmlContent = await response.text();
+        const modalContainer = document.getElementById('modal-container');
+        const h3Element = modalContainer.querySelector('h3');
+        let element = document.getElementById("termination-details");
+        if (element) {
+            element.parentNode.removeChild(element);
+        }
+        h3Element.insertAdjacentHTML('afterend', htmlContent);
+
+        
+        modal.showModal()
+      } else {
+        console.error('Failed to fetch: ', response.statusText);
+      }
+    }
+
+    async function sendWhatsappMessage() {
+      const response = await fetch('/whatsapp_messages', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(obj)
+      });
+
+      if (response.status === 403) {
+        alert('!!! Atenção Mensagem já enviada !!!');
+        location.reload();
+      }
+
+      if(response.ok){
+        window.alert("Entrarão em contato via whatsapp")
+        location.reload()
+      }
+    }
+    // Date Admission
+    const dateAdmissionInput = document.getElementById('dateadmission');
+    dateAdmissionInput.onchange = () => removeClassErrorInElement('date-admission-input');
+
+    // Type Demission
+    const selectTypeDemission = document.getElementById("typedemission");
+    selectTypeDemission.onchange = () => removeClassErrorAndPlaceholderInElement(selectTypeDemission, "type-demission-select")
+    
+    // Salary
+    const salaryInput = document.getElementById('salary');
+    salaryInput.onchange = () => removeClassErrorInElement('salary-input');
+
+    // Advance Notice
+    const selectAdvanceNotice = document.getElementById("advancenotice");
+    selectAdvanceNotice.onchange = () => removeClassErrorAndPlaceholderInElement(selectAdvanceNotice, "advance-notice-select")
+
+    // Vacation
+    const vacationSelect = document.getElementById("vacation");
+    vacationSelect.onchange = () => removeClassErrorAndPlaceholderInElement(vacationSelect, "vacation-select")
+
+    // Thirteen salary
+    const thirteenSalarySelect = document.getElementById("thirteensalary");
+    thirteenSalarySelect.onchange = () => removeClassErrorAndPlaceholderInElement(thirteenSalarySelect, "thirteen-salary-select")
+
+    // Late payment termination
+    const latePaymentTerminationSelect = document.getElementById("latepaymenttermination");
+    latePaymentTerminationSelect.onchange = () => removeClassErrorAndPlaceholderInElement(latePaymentTerminationSelect, "late-payment-termination-select")
+
+    // Name
+    const nameInput = document.getElementById('name');
+    nameInput.onchange = () => removeClassErrorInElement('name-input');
+
+    // Email
+    const emailInput = document.getElementById('email');
+    emailInput.onchange = () => removeClassErrorInElement('email-input');
+
+    // Company
+    const companyInput = document.getElementById('company');
+    companyInput.onchange = () => removeClassErrorInElement('company-input');
+    
+    const modal = document.getElementById("modal-rescission")
+    const buttonClose = document.getElementById("button-close-modal");
+
+    const whatsappButton = document.getElementById("whatsapp-button");
+    whatsappButton.onclick = function() {
+      sendWhatsappMessage()
+    }
+
+    buttonClose.onclick = function() {
+      modal.close();
+    }
+
+    function validateNumberInput(event) {
+      const input = event.target;
+      const value = input.value;
+      input.value = value.replace(/[^0-9]/g, '');
+    }
+  </script>
+<% end %>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descrição do seu site para SEO."/>
+    <title>Calcule sua rescisão trabalhista - Trabalhador Brasileiro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+      <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+      ></script>
+  </head>
+  <body>
+    <header class="header-rescission">
+      <section class="section-header-nav">
+        <div class="header-nav">
+          <a href="https://trabalhadorbrasileiro.com.br/">
+          <img
+            src="https://trabalhadorbrasileiro.com.br/wp-content/uploads/2022/05/logomarca-trabalhador-brasileiro-1.png"
+            alt="logo trabalhador brasileiro"
+            />
+          </a>
+          <nav>
+            <ul>
+              <li>
+                <a href="https://trabalhadorbrasileiro.com.br/faca-sua-reclamacao-trabalhista/">Reclamações</a>
+              </li>
+              <li>
+                <a href="https://trabalhadorbrasileiro.com.br/orientacoes-trabalhistas/">Orientações</a>
+              </li>
+              <li>
+                <a href="https://trabalhadorbrasileiro.com.br/agendar-um-atendimento/">Agendar</a>
+              </li>
+              <li>
+                <a class="actived" href="https://trabalhadorbrasileiro.com.br/calcule-sua-rescisao-trabalhista/">Rescisão</a>
+              </li>
+              <li class="element-menu">
+                <a>Direitos<span> &nbsp;<i class="fas fa-caret-down"></i></span></a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="https://trabalhadorbrasileiro.com.br/saiba-seus-direitos-trabalhista/">Seus direitos</a>
+                  </li>
+                  <li>
+                    <a href="https://trabalhadorbrasileiro.com.br/descubra-o-que-fazer/">O que fazer</a>
+                  </li>
+                  <li>
+                    <a href="https://trabalhadorbrasileiro.com.br/perguntas-frequentes/">Perguntas frequentes</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <a class="button-access" href="https://trabalhadorbrasileiro.com.br/fale-com-a-gente/">
+          <span>
+          <i class="fas fa-user"></i>&nbsp;
+          Acesso
+          </span>
+          </a>
+        </div>
+        <div class="header-mobile-input">
+          <div class="header-menu-toggle">
+            <input type="checkbox" id="header-menu-check" />
+            <label for="header-menu-check" class="header-menu-checkbtn">
+            <i class="fa fa-bars icon-visible" aria-hidden="true"></i>
+            <span class="icon-invisible">&#10005;</span>
+            </label>
+            <nav>
+              <ul>
+                <li>
+                  <a href="https://trabalhadorbrasileiro.com.br/faca-sua-reclamacao-trabalhista/">Reclamações</a>
+                </li>
+                <li>
+                  <a href="https://trabalhadorbrasileiro.com.br/orientacoes-trabalhistas/">Orientações</a>
+                </li>
+                <li>
+                  <a href="https://trabalhadorbrasileiro.com.br/agendar-um-atendimento/">Agendar</a>
+                </li>
+                <li>
+                  <a class="actived" href="https://trabalhadorbrasileiro.com.br/calcule-sua-rescisao-trabalhista/">Rescisão</a>
+                </li>
+                <li class="element-menu">
+                  <input type="checkbox" id="check" />
+                  <label for="check" class="checkbtn">
+                  Direitos<span> &nbsp;<i class="fas fa-caret-down"></i></span>
+                  </label>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="https://trabalhadorbrasileiro.com.br/saiba-seus-direitos-trabalhista/">Seus direitos</a>
+                    </li>
+                    <li>
+                      <a href="https://trabalhadorbrasileiro.com.br/descubra-o-que-fazer/">O que fazer</a>
+                    </li>
+                    <li>
+                      <a href="https://trabalhadorbrasileiro.com.br/perguntas-frequentes/">Perguntas frequentes</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <form class="header-form-input" role="search" action="https://trabalhadorbrasileiro.com.br" method="get">
+            <div>
+              <input placeholder="O que você procura?" type="search" name="s" title="Search" value="" />
+              <button type="submit" title="Search">
+              <i aria-hidden="true" class="fas fa-search"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="section-header-form">
+        <div class="header-form">
+          <span>Trabalhador Brasileiro</span>
+          <form class="header-form-input" role="search" action="https://trabalhadorbrasileiro.com.br" method="get">
+            <div>
+              <input placeholder="O que você procura?" type="search" name="s" title="Search" value="" />
+              <button type="submit" title="Search">
+              <i aria-hidden="true" class="fas fa-search"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </header>
+    <main class="container">
+      <div class="container-image">
+        <img src="https://trabalhadorbrasileiro.com.br/wp-content/uploads/2023/02/mini-slide-trabalhador-brasileiro1.png" alt="Calcule sua rescisão" />
+      </div>
+      <%= yield %>
+    </main>
+    <footer class="footer-rescission">
+      <div class="content">
+        <div class="container">
+          <div>
+            <div>
+              <h4>LINKS<br>ÚTEIS</h4>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+            <nav>
+              <ul>
+                <li>
+                  <a href="https://trabalhadorbrasileiro.com.br/seguro-desemprego/">
+                    <span><i aria-hidden="true" class="fas fa-caret-right"></i></span>
+                    <span>Seguro desemprego</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://trabalhadorbrasileiro.com.br/carteira-digital/">
+                    <span><i aria-hidden="true" class="fas fa-caret-right"></i></span>
+                    <span>Carteira digital</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://trabalhadorbrasileiro.com.br/pis-pasep/">
+                    <span><i aria-hidden="true" class="fas fa-caret-right"></i></span>
+                    <span>PIS/PASEP</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="https://trabalhadorbrasileiro.com.br/solicitar-vinculos-empregaticios-do-caged/">
+                    <span><i aria-hidden="true" class="fas fa-caret-right"></i></span>
+                    <span>CAGED</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://trabalhadorbrasileiro.com.br/receber-o-abono-salarial/">
+                    <span><i aria-hidden="true" class="fas fa-caret-right"></i></span>
+                    <span>Abono salarial</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <div>
+              <h4>ACESSO A<br>INFORMAÇÃO</h4>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+            <nav>
+              <ul>
+                <li>
+                  <a href="https://trabalhadorbrasileiro.com.br/agendar-um-atendimento/">
+                    <span><i aria-hidden="true" class="fas fa-caret-right"></i></span>
+                    <span>Agendar atendimento</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://trabalhadorbrasileiro.com.br/fale-com-a-gente/">
+                    <span><i aria-hidden="true" class="fas fa-caret-right"></i></span>
+                    <span>Fale com a gente</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://trabalhadorbrasileiro.com.br/saiba-seus-direitos-trabalhista/">
+                    <span><i aria-hidden="true" class="fas fa-caret-right"></i></span>
+                    <span>Saiba seus direitos</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="https://trabalhadorbrasileiro.com.br/descubra-o-que-fazer/">
+                    <span><i aria-hidden="true" class="fas fa-caret-right"></i></span>
+                    <span>Descubra o que fazer</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://trabalhadorbrasileiro.com.br/perguntas-frequentes/">
+                    <span><i aria-hidden="true" class="fas fa-caret-right"></i></span>
+                    <span>Perguntas frequentes</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><i aria-hidden="true" class="fas fa-caret-right"></i></span>
+                    <span>Perguntas frequentes</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="container">
+          <div>
+            <div>
+              <h4>PRINCIPAIS<br>ASSUNTOS</h4>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+            <nav>
+              <ul>
+                <li>
+                  <a href="https://api.whatsapp.com/send?phone=5585988881585&text=Ol%C3%A1,%20estou%20com%20Atraso%20de%20sal%C3%A1rio%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o.%20%20">
+                    <span><i aria-hidden="true" class="fas fa-caret-right"></i></span>
+                    <span>Atraso de salário</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://api.whatsapp.com/send?phone=558588881585&text=Ol%C3%A1,%20estou%20com%20a%20*Carteira%20n%C3%A3o%20assinada*%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o.%20%20">
+                    <span><i aria-hidden="true" class="fas fa-caret-right"></i></span>
+                    <span>Carteira não assinada</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://api.whatsapp.com/send?phone=558588881585&text=Ol%C3%A1,%20estou%20com%20*Descontos%20Indevidos%20no%20Sal%C3%A1rio*%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o.%20%20">
+                    <span><i aria-hidden="true" class="fas fa-caret-right"></i></span>
+                    <span>Descontos Indevidos no salário</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="https://api.whatsapp.com/send?phone=558588881585&text=Ol%C3%A1,%20estou%20com%20o%20*Valor%20da%20rescis%C3%A3o%20errado*%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o.%20">
+                    <span><i aria-hidden="true" class="fas fa-caret-right"></i></span>
+                    <span>Valor da rescisão errado</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://api.whatsapp.com/send?phone=558588881585&text=Ol%C3%A1,%20estou%20tendo%20*Desvio%20de%20fun%C3%A7%C3%A3o*%20na%20empresa%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o.%20">
+                    <span><i aria-hidden="true" class="fas fa-caret-right"></i></span>
+                    <span>Desvio de função</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://api.whatsapp.com/send?phone=558588881585&text=Ol%C3%A1,%20meu%20*FGTS%20n%C3%A3o%20esta%20depositado*%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o.%20">
+                    <span><i aria-hidden="true" class="fas fa-caret-right"></i></span>
+                    <span>FGTS não depositado</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://api.whatsapp.com/send?phone=558588881585&text=Ol%C3%A1,%20estou%20com%20as%20*Ferias%20vencidas*%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o.%20">
+                    <span><i aria-hidden="true" class="fas fa-caret-right"></i></span>
+                    <span>Férias vencidas</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://api.whatsapp.com/send?phone=558588881585&text=Ol%C3%A1,%20estou%20com%20problemas%20com%20minha%20Licen%C3%A7a%20maternidade%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o.%20">
+                    <span><i aria-hidden="true" class="fas fa-caret-right"></i></span>
+                    <span>Licença maternidade</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://api.whatsapp.com/send?phone=558588881585&text=Ol%C3%A1,%20as%20*instala%C3%A7%C3%B5es%20da%20empresa%20s%C3%A3o%20insalubres*%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o.%20">
+                    <span><i aria-hidden="true" class="fas fa-caret-right"></i></span>
+                    <span>Local insalubre</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://api.whatsapp.com/send?phone=558588881585&text=Ol%C3%A1,%20a%20empresa%20que%20trabalha%20*N%C3%A3o%20paga%20alimenta%C3%A7%C3%A3o*%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o.%20">
+                    <span><i aria-hidden="true" class="fas fa-caret-right"></i></span>
+                    <span>Não paga alimentação</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://api.whatsapp.com/send?phone=558588881585&text=Ol%C3%A1,%20a%20empresa%20que%20trabalha%20*N%C3%A3o%20paga%20periculosidade*%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o.%20">
+                    <span><i aria-hidden="true" class="fas fa-caret-right"></i></span>
+                    <span>Não paga periculosidade</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://api.whatsapp.com/send?phone=558588881585&text=Ol%C3%A1,%20estou%20sofrendo%20*Press%C3%A3o%20psicol%C3%B3gica*%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o.%20">
+                    <span><i aria-hidden="true" class="fas fa-caret-right"></i></span>
+                    <span>Pressão psicológica</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://api.whatsapp.com/send?phone=558588881585&text=Ol%C3%A1,%20estou%20trabalhando%20*Sem%20a%20carteira%20assinada*%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o.%20">
+                    <span><i aria-hidden="true" class="fas fa-caret-right"></i></span>
+                    <span>Sem carteira assinada</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="info">
+            <a href="https://trabalhadorbrasileiro.com.br/">
+              <img
+                src="https://trabalhadorbrasileiro.com.br/wp-content/uploads/2022/05/logomarca-trabalhador-brasileiro.png"
+                alt=""
+                loading="lazy"  
+              />
+            </a>
+            <p>
+              O Trabalhador Brasileiro: Seu Portal Independente de Orientação Trabalhista.
+              <br />
+              Oferecemos informações e orientações gratuitas sobre direitos trabalhistas, sempre ao alcance de suas mãos.
+              <br />
+              Embora não estejamos vinculados ao gov.br, nosso compromisso é ajudar você a compreender e garantir seus direitos no ambiente de trabalho.
+            </p>
+
+            <div class="links">
+              <span>
+                <a href="#" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </span>
+              <span>
+                <a href="#" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </span>
+              <span>
+                <a href="#" target="_blank">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </span>
+              <span>
+                <a href="#" target="_blank">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </span>
+              <span>
+                <a href="#" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="baseboard">
+        <p>© 2023 | Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+  <%= yield :before_javascript %>
+</html>

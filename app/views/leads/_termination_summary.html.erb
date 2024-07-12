@@ -1,0 +1,31 @@
+<table class="modal-table" id="termination-details">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Valores</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FGTS RECEBIDO</td>
+      <td class="fgts-total-disponivel" colspan="2"><%= ActiveSupport::NumberHelper.number_to_currency(termination_values[:fgts][:total_value], unit: "R$", separator: ",", delimiter: ".")%></td>
+    </tr>
+    <tr>
+      <td>AVISO PRÉVIO</td>
+      <td id="ul-dt-contrato" colspan="2"><%= ActiveSupport::NumberHelper.number_to_currency(termination_values[:notice], unit: "R$", separator: ",", delimiter: ".")%></td>
+    </tr>
+     </tr>
+    <tr>
+      <td>SALDO SALÁRIO</td>
+      <td id="ul-dt-contrato" colspan="2"><%= ActiveSupport::NumberHelper.number_to_currency(termination_values[:salary_balance], unit: "R$", separator: ",", delimiter: ".")%></td>
+    </tr>
+    <tr>
+      <td>DÉCIMO TERCEIRO</td>
+      <td id="ul-dt-contrato" colspan="2"><%= ActiveSupport::NumberHelper.number_to_currency(termination_values[:thirteenth_salary], unit: "R$", separator: ",", delimiter: ".")%></td>
+    </tr>
+    <tr>
+      <td>FÉRIAS(FÉRIAS PROPORCIONAIS/FÉRIAS VENCIDAS)</td>
+      <td id="ul-dt-contrato" colspan="2"><%= ActiveSupport::NumberHelper.number_to_currency(termination_values[:vacation_value], unit: "R$", separator: ",", delimiter: ".")%></td>
+    <tr>
+  </tbody>
+</table>
